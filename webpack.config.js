@@ -23,6 +23,16 @@ Encore
     .autoProvidejQuery()
 
     .enablePostCssLoader()
+
+    .enableReactPreset()
+
+    .enableVersioning()
+
+    .createSharedEntry('vendor', [
+        'jquery',
+        'react',
+        'react-dom'
+    ])
 ;
 
 module.exports = Encore.getWebpackConfig();
